@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+header{
+    background: #111;
+    padding: 15px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero{
+    background: url('https:/via.placeholder.com/1200x400') no-repeat center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
