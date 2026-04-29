@@ -51,7 +51,7 @@ nav a:hover::after {
     width: 100%;
 }
 .hero{
-    background: #333 url('https:/via.placeholder.com/1200x400') no-repeat center;
+    background: url(img/bag.jpg) no-repeat center;
     background-size: cover;
     color: white;
     text-align: center;
