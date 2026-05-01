@@ -8,7 +8,7 @@ body{
 
 }
 
-/* HEADER */
+
 header{
     position: fixed;
     top: 0;
@@ -54,7 +54,7 @@ nav ul li a:hover{
     background: rgba(255,0,0,0.2);
 }
 
-/* خط زیر لینک */
+
 nav ul li a::after{
     content: "";
     position: absolute;
@@ -70,7 +70,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-/* HERO */
+
 .hero{
     height: 100vh;
     background: url("bage.jpg") no-repeat center;
@@ -94,6 +94,7 @@ nav ul li a:hover::after{
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 9px;
 }
 
 .hero button:hover{
@@ -116,7 +117,7 @@ nav ul li a:hover::after{
 
 }
 
-/* CARS */
+
 .cars{
     text-align: center;
     padding: 80px  50px;
@@ -240,7 +241,7 @@ nav ul li a:hover::after{
     z-index: 1;
 }
 
-/* ABOUT */
+
 .about{
     max-width: 800px;
     margin: 50px auto;
@@ -249,7 +250,7 @@ nav ul li a:hover::after{
     border-radius: 15px;
     text-align: center;
     color: white;
-    box-shadow :  10px 30px rgba(0, 0, 0, 0.5);
+    
 }
 
 .about p{
@@ -275,14 +276,67 @@ nav ul li a:hover::after{
     padding: 40px;
 }
 
-.contact input,
-.contact textarea{
-    display: block;
+.contact h2{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255,0,0,0.6),
+                 0 0 20px rgba(255,0,0,0.4);
+}
+
+
+.contact h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
     width: 60%;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #ccc;
+    height: 3px;
+    background: red;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.contact-form{
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 12px;
+    border: 2px solid rgb(60, 42, 42);
+    background: transparent;
+    color: white;
     border-radius: 8px;
+    outline: none;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus{
+    box-shadow: 0 0 10px rgba(255,0,0,0.6);
+}
+
+.contact-form button{
+    padding: 12px;
+    border: none;
+    background: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    background: darkred;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
 }
 
 .contact textarea{
@@ -291,29 +345,9 @@ nav ul li a:hover::after{
 
 }
 
-.contact button{
-    padding: 10px 30px;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 8px;
-}
 
-.contact button:hover{
-    background: red;
-    transform: scale(1.05);
-}
 
-button{
-    border-radius: 12px;
 
-}
-
-button:active{
-    transform: scale(0.95);
-}
-
-/* FOOTER */
 footer{
     background: black;
     color: white;
