@@ -78,8 +78,33 @@ nav a:hover::after{
 }
 .car{
     background: white;
-    width: 100px;
+    width: 120px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 5px 15px  rgba(0, 0, 0, 1);
+}
+
+.car img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.car button{
+    margin-top: 10px;
+    padding: 8px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.about{
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+.about p{
+    
 }
