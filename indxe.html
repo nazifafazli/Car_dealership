@@ -1,96 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Dealership</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoLux Motors</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Autolux Motors</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#cars">Cars</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div>
-            <h2>Find Your Dream Car</h2>
-            <p>Luxury, Performance, style</p>
-            <button>Explore Cars</button>
+<header>
+    <h1>AutoLux Motors</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Find Your Dream Car</h2>
+    <p>Luxury. Performance. Style.</p>
+    <button>Explore Cars</button>
+</section>
+
+<section id="cars" class="cars">
+    <h2>Featured Cars</h2>
+
+    <div class="car-container">
+
+        <div class="car">
+            <img src="bmw.jpg">
+            <h3>BMW M4</h3>
+            <p>$75,000</p>
+            <button>Buy Now</button>
         </div>
-        
-    </section>
 
-    <section id="cars">
-        <h2>Featured Cars</h2>
-
-        <div class="car-container">
-            <div class="car">
-                <img src="bmw.jpg" alt="">
-                <h3>BMW M4</h3>
-                <p>75000$</p>
-                <button>Buy Now</button>
-
-            </div>
-            <div class="car">
-                <img src="mer.jpg" alt="">
-                <h3>Mercedes C-Class</h3>
-                <p>65000$</p>
-                <button>Buy Now</button>
-
-            </div>
-            <div class="car">
-                <img src="audi.jpg" alt="">
-                <h3>Audi A6</h3>
-                <p>70000$</p>
-                <button>Buy Now</button>
-
-            </div>
-
+        <div class="car">
+            <img src="mer.jpg">
+            <h3>Mercedes C-Class</h3>
+            <p>$65,000</p>
+            <button>Buy Now</button>
         </div>
-    </section>
 
-    <section class="about"  id="about">
-        <h2>About Us</h2>
-        <p>
-
-        Exclusive deals, exceptional rides!  
-
-        Upgrade your driving style with the luxury cars at <strong>AutoLux Motors</strong>.  
-
-        Premium quality, trusted service, unbeatable prices.
-
-    </p>
-    <div class="info">
-        <p>Instagram: <a href="https://Instagram.com" target="_blank">autoLux</a></p>
-        <p>Phone: <a href="tel:+93 0796531953">+93 0796531953</a></p>
-        <p>Address: <a href="https://www.google.com/map?q=Herat, Afghanistan" target="_blank">Herat, Afghanistan</a></p>
+        <div class="car">
+            <img src="audi.jpg">
+            <h3>Audi A6</h3>
+            <p>$70,000</p>
+            <button>Buy Now</button>
+        </div>
 
     </div>
 
-    </section>
+    <div class="bottom-section">
+        <!--Featured  Cars-->
+        <!--About-->
+        <!--C0ntact-->
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
+<section id="about" class="about">
+    <h2>About Us</h2>
 
-        <input type="text" placeholder="Your Name" id="name">
-        <input type="email" id="email" placeholder="Your Email">
-        <textarea name="message" id="mess">message</textarea>
+    <p>
+        Exclusive deals, exceptional rides! Upgrade your driving style with the luxury cars at AutoLux Motors.
+        Premium quality, trusted service, unbeatable prices.
+    </p>
 
-        <button>Send</button>
+    <p>
+        Instagram:
+        <a href="https://instagram.com" target="_blank">autolux</a>
+    </p>
 
-    </section>
+    <p>
+        Phone:
+        <a href="tel:+93700000000">+93 700000000</a>
+    </p>
 
-    <footer>
-        <p>&copy; 2026 Auutolux Motors</p>
-    </footer>
-    
+    <p>
+        Address:
+        <a href="https://maps.google.com" target="_blank">Herat, Afghanistan</a>
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Send</button>
+</section>
+
+<footer>
+    <p>© 2026 AutoLux Motors</p>
+</footer>
+
 </body>
 </html>
