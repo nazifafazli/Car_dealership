@@ -81,6 +81,7 @@ nav ul li a:hover::after{
     justify-content: center;
     padding-left: 50px;
     margin-top: 70px;
+    
 }
 
 .hero h2{
@@ -95,11 +96,15 @@ nav ul li a:hover::after{
     border: none;
     cursor: pointer;
     border-radius: 9px;
+    transition: 0.3s;
+    font-weight: bold;
+
 }
 
 .hero button:hover{
-    background: rgb(182, 140, 140);
+    background: darkred;
     color: black;
+    box-shadow: 0 0 15px rgba(255,0,0,0.7);
 
 }
 
