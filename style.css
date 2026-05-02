@@ -18,11 +18,17 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 25px;
+    padding: 10px 20px;
     z-index: 1000;
 }
 header h1{
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+
 }
 
 nav ul{
@@ -30,10 +36,17 @@ nav ul{
     display: flex;
     margin: 0;
     padding: 0;
+    margin-right: 20px;
 }
 
 nav ul li{
-    margin-left: 20px;
+    margin-left: auto;
+
+
+}
+nav ul li:last-child {
+    margin-right: 10px;
+
 }
 
 nav ul li a{
@@ -244,6 +257,23 @@ nav ul li a:hover::after{
 .bottom-section *{
     position: relative;
     z-index: 1;
+}
+
+.buy-btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+      
+
+.buy-btn:hover {
+    background: red;
+    transform: scale(1.1);
 }
 
 

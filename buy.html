@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Buy Car</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom, #111, #1a1a1a);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.car-box {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.car-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: darkred;
+}
+
+.back {
+    display: block;
+    margin-top: 20px;
+    color: gray;
+    text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Complete Your Purchase</h1>
+
+<div class="car-box">
+    <img id="car-img" src="">
+    <h2 id="car-title"></h2>
+    <p id="car-price"></p>
+
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Email">
+
+    <button>Confirm Order</button>
+</div>
+
+<a href="index.html" class="back">← Back to Home</a>
+
+<script>
+// گرفتن اسم ماشین از لینک
+const params = new URLSearchParams(window.location.search);
+const car = params.get("car");
+
+// گرفتن المنت‌ها
+const title = document.getElementById("car-title");
+const image = document.getElementById("car-img");
+const price = document.getElementById("car-price");
+
+// تنظیم اطلاعات
+if (car === "bmw") {
+    title.innerText = "BMW M4";
+    image.src = "bmw.jpg";
+    price.innerText = "$75,000";
+}
+
+if (car === "mercedes") {
+    title.innerText = "Mercedes C-Class";
+    image.src = "mercedes.jpg";
+    price.innerText = "$65,000";
+}
+
+if (car === "audi") {
+    title.innerText = "Audi A6";
+    image.src = "audi.jpg";
+    price.innerText = "$70,000";
+}
+</script>
+
+</body>
+</html>
