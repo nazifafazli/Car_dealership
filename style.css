@@ -276,6 +276,53 @@ nav ul li a:hover::after{
     transform: scale(1.1);
 }
 
+.stats{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    text-align: center;
+}
+
+
+.stats div{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,0,0,0.2);
+    border-radius: 15px;
+    padding: 40px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: 0.4s;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.stats div::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: red;
+    transition: 0.5s;
+}
+
+
+.stats div:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px rgba(255,0,0,0.5);
+    border-color: rgba(255,0,0,0.6);
+}
+
+.stats div:hover::before{
+    left: 0;
+}
+
 
 .about{
     max-width: 800px;
@@ -305,7 +352,47 @@ nav ul li a:hover::after{
     color: white;
 }
 
-/* CONTACT */
+.gallery{
+    text-align: center;
+    padding: 80px 40px;
+    background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+}
+
+.gallery h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255,0,0,0.5);
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.gallery-container img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.4s;
+    filter: grayscale(20%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.gallery-container img:hover{
+    transform: scale(1.08) rotate(1deg);
+    filter: grayscale(0%);
+    box-shadow: 0 0 25px rgba(255,0,0,0.6);
+}
+
+
+
+
 .contact{
     text-align: center;
     padding: 40px;
